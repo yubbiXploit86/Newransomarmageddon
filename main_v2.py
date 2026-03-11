@@ -8,7 +8,6 @@ import base64
 import platform 
 import getpass
 import socket
-import base64
 import subprocess
 import shutil
 import time
