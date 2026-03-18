@@ -1,4 +1,4 @@
-name: Build Armageddon EXE
+name: Liushen EXE
 
 on:
   push:
@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --clean --name Armageddon main_v2.py
+        pyinstaller --onefile --noconsole --clean --name Liushen.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: armageddon-EXE
-        path: dist/armageddon.exe
+        name: Liushen-EXE
+        path: dist/Liushen.exe
