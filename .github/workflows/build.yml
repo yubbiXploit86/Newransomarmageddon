@@ -1,4 +1,4 @@
-name: LIUSHEN2 EXE
+name: LIUSHENV2 EXE
 
 on:
   push:
@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --clean --name LIUSHEN2 LIUSHEN2.py
+        pyinstaller --onefile --noconsole --clean --name LIUSHENV2 LIUSHENV2.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: LIUSHEN2-EXE
-        path: dist/LIUSHEN2.exe
+        name: LIUSHENV2-EXE
+        path: dist/LIUSHENV2.exe
