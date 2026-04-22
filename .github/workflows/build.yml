@@ -1,4 +1,4 @@
-name: LIUSHENV2 EXE
+name: SHENCHUYI EXE
 
 on:
   push:
@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --clean --name LIUSHENV2 LIUSHENV2.py
+        pyinstaller --onefile --noconsole --clean --name SHENCHUYI SHENCHUYI.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: LIUSHENV2-EXE
-        path: dist/LIUSHENV2.exe
+        name: SHENCHUYI-EXE
+        path: dist/SHENCHUYI.exe
