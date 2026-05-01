@@ -1,4 +1,4 @@
-name: SHENCHUYI EXE
+name: ShenChuyi88 EXE
 
 on:
   push:
@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --clean --name SHENCHUYI SHENCHUYI.py
+        pyinstaller --onefile --noconsole --clean --name ShenChuyi88 ShenChuyi88.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: SHENCHUYI-EXE
-        path: dist/SHENCHUYI.exe
+        name: ShenChuyi88-EXE
+        path: dist/ShenChuyi88.exe
