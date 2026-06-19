@@ -1,4 +1,4 @@
-name: Xaysec EXE
+name: XaysecRansomware EXE
 
 on:
   push:
@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --noconsole --clean --name Xaysec Xaysec.py
+        pyinstaller --onefile --noconsole --clean --name XaysecRansomware XaysecRansomware.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: Xaysec-EXE
-        path: dist/Xaysec.exe
+        name: XaysecRansomware-EXE
+        path: dist/XaysecRansomware.exe
